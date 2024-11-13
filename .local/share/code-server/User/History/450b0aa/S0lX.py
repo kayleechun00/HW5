@@ -89,11 +89,8 @@ st.altair_chart(scatter_plot, use_container_width=True)
 
 
 
-st.text("""Top 10 Cities by Total Square Footag
-This bar chart displays the total square footage of buildings grouped by their status 
-(e.g., active, inactive, demolished). Each bar represents a different building status category, 
-with the length of the bar indicating the total square footage. 
-The color of each bar differentiates the building statuses for better visualization.""")
+st.text("""Total Square Footage by Building Status
+This bar chart displays the total square footage of buildings grouped by their status (e.g., active, inactive, demolished). Each bar represents a different building status category, with the length of the bar indicating the total square footage. The color of each bar differentiates the building statuses for better visualization. Tooltips provide the exact square footage for each status category, making it easier to compare and analyze building usage or condition trends.""")
 
 city_data = data[['City', 'Square Footage']].dropna()
 city_sum = city_data.groupby('City').sum().reset_index()

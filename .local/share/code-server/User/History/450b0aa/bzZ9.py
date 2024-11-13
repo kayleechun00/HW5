@@ -60,11 +60,7 @@ st.altair_chart(line_chart, use_container_width=True)
 
 
 
-st.text(""" Year Constructed vs. Square Footage
-This scatter plot visualizes the relationship between the year a building was constructed and its total square footage.
-Each point represents a building, with the x-axis showing the construction year and the y-axis showing the square footage. 
-The color of the points varies based on the square footage, providing an additional dimension of insight. 
-""")
+
 
 filtered_data = data[['Year Constructed', 'Square Footage', 'Location Name']].dropna()
 filtered_data = data[
@@ -79,7 +75,7 @@ scatter_plot = alt.Chart(filtered_data).mark_circle(size=40).encode(
     color=alt.Color('Square Footage:Q', scale=alt.Scale(scheme='plasma'), title='Square Footage'),
     tooltip=['Location Name', 'Year Constructed', 'Square Footage']
 ).properties(
-    title='Year Constructed vs. Square Footage',
+    title='Building Size by Year Constructed',
     width=800,
     height=500
 ).interactive()
@@ -89,19 +85,15 @@ st.altair_chart(scatter_plot, use_container_width=True)
 
 
 
-st.text("""Top 10 Cities by Total Square Footag
-This bar chart displays the total square footage of buildings grouped by their status 
-(e.g., active, inactive, demolished). Each bar represents a different building status category, 
-with the length of the bar indicating the total square footage. 
-The color of each bar differentiates the building statuses for better visualization.""")
+
 
 city_data = data[['City', 'Square Footage']].dropna()
 city_sum = city_data.groupby('City').sum().reset_index()
 
-
+# 총 면적 기준으로 상위 10개 도시 필터링
 top_10_cities = city_sum.nlargest(10, 'Square Footage')
 
-
+# 막대 그래프 생성
 bar_chart = alt.Chart(top_10_cities).mark_bar().encode(
     x=alt.X('sum(Square Footage):Q', title='Total Square Footage'),
     y=alt.Y('City:N', sort='-x', title='City'),

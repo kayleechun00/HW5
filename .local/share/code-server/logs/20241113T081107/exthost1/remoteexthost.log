@@ -305,3 +305,4 @@
 	at async T.getBranchBase (/usr/lib/code-server/lib/vscode/extensions/git/dist/main.js:2:1016462)
 	at async t.GitHistoryProvider.resolveHEADMergeBase (/usr/lib/code-server/lib/vscode/extensions/git/dist/main.js:2:945925)
 	at async t.GitHistoryProvider.onDidRunGitStatus (/usr/lib/code-server/lib/vscode/extensions/git/dist/main.js:2:940157)
+2024-11-13 09:00:36.407 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
