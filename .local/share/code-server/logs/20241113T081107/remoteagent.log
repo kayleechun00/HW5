@@ -1,0 +1,12 @@
+2024-11-13 08:11:07.477 [info] 
+
+
+
+
+2024-11-13 08:11:07.529 [info] Extension host agent started.
+2024-11-13 08:11:07.615 [info] Started initializing default profile extensions in extensions installation folder. file:///home/coder/.local/share/code-server/extensions
+2024-11-13 08:11:07.645 [info] Completed initializing default profile extensions in extensions installation folder. file:///home/coder/.local/share/code-server/extensions
+2024-11-13 08:11:12.380 [info] [10.0.88.88][a8b650e8][ManagementConnection] New connection established.
+2024-11-13 08:11:14.298 [info] [10.0.88.88][6b0b98fd][ExtensionHostConnection] New connection established.
+2024-11-13 08:11:14.593 [info] [10.0.88.88][6b0b98fd][ExtensionHostConnection] <50> Launched Extension Host Process.
+2024-11-13 08:45:46.287 [info] [10.0.88.88][6b0b98fd][ExtensionHostConnection] The client has reconnected.

@@ -1,0 +1,19 @@
+[2024-11-13T08:11:07.038Z] info  code-server 4.91.1 1962f48b7f71772dc2c060dbaa5a6b4c0792a549
+[2024-11-13T08:11:07.042Z] info  Using user-data-dir /home/coder/.local/share/code-server
+[2024-11-13T08:11:07.093Z] info  Using config file /home/coder/.config/code-server/config.yaml
+[2024-11-13T08:11:07.093Z] info  HTTP server listening on http://0.0.0.0:8080/
+[2024-11-13T08:11:07.093Z] info    - Authentication is disabled
+[2024-11-13T08:11:07.094Z] info    - Not serving HTTPS
+[2024-11-13T08:11:07.094Z] info  Session server listening on /home/coder/.local/share/code-server/code-server-ipc.sock
+[08:11:07] 
+
+
+
+
+[08:11:07] Extension host agent started.
+[08:11:07] Started initializing default profile extensions in extensions installation folder. file:///home/coder/.local/share/code-server/extensions
+[08:11:07] Completed initializing default profile extensions in extensions installation folder. file:///home/coder/.local/share/code-server/extensions
+[08:11:12] [10.0.88.88][a8b650e8][ManagementConnection] New connection established.
+[08:11:14] [10.0.88.88][6b0b98fd][ExtensionHostConnection] New connection established.
+[08:11:14] [10.0.88.88][6b0b98fd][ExtensionHostConnection] <50> Launched Extension Host Process.
+[08:45:46] [10.0.88.88][6b0b98fd][ExtensionHostConnection] The client has reconnected.
